@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book an Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="book-page">
+	<header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="book.html">Book Appointment</a></li>
+                <li><a href="staff_login.html">Staff Area</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<div class="container">
+    <h1>Book an Appointment</h1>
+    <form action="book_appointment.php" method="POST">
+        <label for="patient_id">Patient ID:</label>
+        <input type="number" name="patient_id" id="patient_id" required>
+
+        <label for="appointment_date">Appointment Date:</label>
+        <input type="date" name="appointment_date" id="appointment_date" required>
+
+        <label for="appointment_time">Appointment Time:</label>
+        <input type="time" name="appointment_time" id="appointment_time" required>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+</div>
+	<script src="script.js"></script>
+</body>
+</html>
